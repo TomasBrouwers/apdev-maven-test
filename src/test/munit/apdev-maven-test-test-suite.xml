@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="apdev-maven-test-test-suite.xml" />
+	<munit:test name="apdev-maven-test-test-suite-apdev-maven-testFlowTest" description="Test" doc:id="d0b1930c-8672-4a8b-99d7-4ea2a6170c29" >
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to apdev-maven-testFlow" doc:id="b996aff6-0acd-42db-bf24-0e830d422766" name="apdev-maven-testFlow"/>
+		</munit:execution>
+	</munit:test>
+
+
+</mule>
